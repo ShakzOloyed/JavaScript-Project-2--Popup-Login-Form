@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+
+}
+body{
+  background-color: lightcoral;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+
+
+}
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+h3{
+  font-weight: lighter;
+  font-size: 1.25rem;
+}
+
+
+#container{
+  /* height: 100%;
+  width: 100%; */
+  /* border: 1px solid black; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* background-image: linear-gradient(rgba(185, 163, 163, 0.5), rgba(0, 0, 0, 0.5)), url("arnel-hasanovic-4oWSXdeAS2g-unsplash"); */
+
+
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  padding: 1rem 2rem;
+  color: blueviolet;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background:#1ac0f3;
+  color: rgb(212, 218, 223);
+}
+
+.form{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 6px 6px 29px --4px rgba(black, black, black, grey);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(44, 43, 43);
+  width: 500px;
+  padding: 20px 30px;
+  font-size: 15px;
+  /* opacity: 0; */
+  pointer-events: none;
+
+
+}
+.form .show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.close-btn{
+  position:absolute;
+  top:10px;
+  right: 10px;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  width: 30px;
+  height: 85px;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  /* border: none; */
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #aaa;
+
+}
+input [type="checkbox"] {
+  margin-right: 10px;
+  
+}
+
+.submit{
+  background-color: #1ac0f3;
+  color: white;
+  cursor: pointer;
+  padding: 30px 25px;
+  /* text-indent: 20px; */
+  border-radius: 3px;
+  margin-bottom: 40px;
+  width: 100%;
+  border: 1px solid #aaa;
+
+}
+.submit:hover {
+  background-color: aqua;
+  transition: 0.5s;
+  text-shadow: white 1px 1px;
+
+}
+.member{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 30px 25px;
+  /* text-indent: 20px; */
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+
+a{
+  text-align: center;
+  position:absolute;
+  bottom: 8px;
+  left: 16px;
+
+}
+a:hover{
+  color: red;
+}
