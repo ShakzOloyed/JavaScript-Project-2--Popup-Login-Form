@@ -4,9 +4,12 @@
 
 }
 body{
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   font-family: "Lato", sans-serif;
   height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/arnel-hasanovic-4oWSXdeAS2g-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 
 
 }
@@ -34,7 +37,7 @@ h3{
 
 }
 
-.btn {
+.open-btn{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,9 +51,10 @@ h3{
   text-decoration: none;
   transition: 0.5s;
   box-shadow: 0px 2px 4px  rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.btn:hover {
+.open-btn:hover {
   background:#1ac0f3;
   color: rgb(212, 218, 223);
 }
@@ -67,15 +71,16 @@ h3{
   width: 500px;
   padding: 20px 30px;
   font-size: 15px;
-  /* opacity: 0; */
-  pointer-events: none;
-
+  /* pointer-events: auto; */
+  transition: opacity 0.3ms ease-in-out 0ms;
+  display: none;
 
 }
-.form .show {
+/* .form .show{
   opacity: 1;
   pointer-events: auto;
-}
+  transition: opacity 0.3ms ease-in-out 0ms;
+} */
 .close-btn{
   position:absolute;
   top:10px;
@@ -85,6 +90,11 @@ h3{
   text-align: center;
   width: 30px;
   height: 85px;
+  cursor: pointer;
+  
+}
+.close-btn:hover{
+  color: red;
 
 }
 input[type="text"],
@@ -93,10 +103,9 @@ input[type="password"] {
   display: block;
   width: 100%;
   /* border: none; */
-  padding: 12px 16px;
+  padding: 16px 12px;
   margin: 8px 0;
   border-radius: 4px;
-  color: #fff;
   border: 1px solid #aaa;
 
 }
@@ -145,3 +154,7 @@ a{
 a:hover{
   color: red;
 }
+
+/* .hide{
+  display: none;
+} */
